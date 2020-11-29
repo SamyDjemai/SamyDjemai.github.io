@@ -84,6 +84,7 @@ a:link, a:visited, a:hover, a:active
     color: white;
 }
 .portfolio .card img {
+    object-fit: cover;
     height: 100%;
     width: 100%;
     filter: saturate(0.9);
@@ -100,10 +101,15 @@ a:link, a:visited, a:hover, a:active
     position: absolute;
     bottom: 0px;
     left: 0px;
-    line-height: 16px;
     user-select: none;
     pointer-events: none;
 }
+.portfolio .card h1 {
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
 .portfolio .card h2 {
+    margin-top: 0px;
+    margin-bottom: 8px;
     font-weight: normal;
 }
