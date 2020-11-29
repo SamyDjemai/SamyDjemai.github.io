@@ -67,7 +67,6 @@ header img
 }
 #links
 {
-    margin-top: 30px;
     font-size: 2em;
     color: black;
     text-decoration: none;
@@ -75,4 +74,36 @@ header img
 a:link, a:visited, a:hover, a:active
 {
     color: black;
+}
+.portfolio .card {
+    position: relative;
+    background-color: gray;
+    height: 300px;
+    text-align: left;
+    vertical-align: bottom;
+    color: white;
+}
+.portfolio .card img {
+    height: 100%;
+    width: 100%;
+    filter: saturate(0.9);
+    transition: all 0.2s;
+}
+.portfolio .card img:hover {
+    filter: saturate(1.1);
+    transform: scale(1.02);
+}
+.portfolio .card .text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 12px;
+    padding-right: 12px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    line-height: 16px;
+    user-select: none;
+    pointer-events: none;
+}
+.portfolio .card h2 {
+    font-weight: normal;
 }
