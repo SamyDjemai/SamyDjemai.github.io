@@ -11,11 +11,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 @media only screen and (min-width: 1200px) {
   #container {
     flex-direction: row;
     align-items: start;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   #portfolio {
     flex: 1;
@@ -26,6 +30,8 @@ body {
   }
   .main {
     align-self: flex-start;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }
 .main {
@@ -38,8 +44,6 @@ body {
   align-items: stretch;
   text-align: center;
   overflow: visible;
-  margin-left: 24px;
-  margin-right: 24px;
   padding-top: 24px;
 }
 .main p {
