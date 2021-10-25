@@ -11,13 +11,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-left: 24px;
   padding-right: 24px;
+}
+.main {
+  flex: 1;
+  align-self: center;
+  overflow: auto;
+  width: 100%;
+  max-width: 512px;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  overflow: visible;
+  padding-top: 24px;
 }
 @media only screen and (min-width: 1200px) {
   #container {
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -33,19 +46,6 @@ body {
     margin-left: 24px;
     margin-right: 24px;
   }
-}
-.main {
-  flex: 1;
-  align-self: center;
-  overflow: auto;
-  width: 100%;
-  max-width: 512px;
-  align-self: flex-start;
-  flex-direction: column;
-  align-items: stretch;
-  text-align: center;
-  overflow: visible;
-  padding-top: 24px;
 }
 .main p {
   text-align: justify;
@@ -126,6 +126,13 @@ a:active {
 }
 .portfolio .card h2 {
   margin-top: 0px;
+  margin-bottom: 4px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.portfolio .card h3 {
+  margin-top: 0px;
   margin-bottom: 8px;
   font-weight: 300;
+  font-size: 16px;
 }
