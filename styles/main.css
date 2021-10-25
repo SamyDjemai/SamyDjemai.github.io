@@ -49,6 +49,7 @@ body {
 }
 .main p {
   text-align: justify;
+  line-height: 140%;
 }
 #first-sentence {
   font-weight: bold;
